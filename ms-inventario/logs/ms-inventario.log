@@ -1,0 +1,373 @@
+2026-10-26 17:08:57.326 INFO  [main] c.f.inventario.InventarioApplication - Starting InventarioApplication using Java 21.0.12.1 with PID 5840 (C:\Users\Marti\Desktop\FerreteriaLujan-Distri\ms-inventario2\target\classes started by Marti in C:\Users\Marti\Desktop\FerreteriaLujan-Distri\ms-inventario2)
+2026-10-26 17:08:57.328 INFO  [main] c.f.inventario.InventarioApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-26 17:08:57.640 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-10-26 17:08:58.106 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-10-26 17:08:58.108 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-26 17:08:58.232 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 118 ms. Found 7 JPA repository interfaces.
+2026-10-26 17:08:58.248 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-10-26 17:08:58.250 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-10-26 17:08:58.266 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.inventario.repository.CategoriaProductoRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:08:58.266 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.inventario.repository.DepositoRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:08:58.267 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.inventario.repository.DetalleTransferenciaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:08:58.267 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.inventario.repository.InventarioRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:08:58.268 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.inventario.repository.MarcaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:08:58.268 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.inventario.repository.ProductoRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:08:58.269 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.inventario.repository.TransferenciaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:08:58.269 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2026-10-26 17:08:58.507 INFO  [main] o.s.cloud.context.scope.GenericScope - BeanFactory id=aebe58e5-2980-34ce-a727-c4b8c20c1b53
+2026-10-26 17:08:58.855 INFO  [main] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-10-26 17:08:58.865 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-127.0.0.1-8081"]
+2026-10-26 17:08:58.867 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-26 17:08:58.867 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-26 17:08:58.928 INFO  [main] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1550 ms
+2026-10-26 17:08:59.090 INFO  [main] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-26 17:08:59.131 INFO  [main] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-26 17:08:59.432 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-26 17:08:59.457 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-26 17:09:02.395 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@47e70f54
+2026-10-26 17:09:02.397 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-26 17:09:03.067 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://aws-0-sa-east-1.pooler.supabase.com:5432/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-26 17:09:03.945 INFO  [main] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-26 17:09:03.951 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-26 17:09:04.031 INFO  [main] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-26 17:09:05.414 INFO  [main] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestClient.
+2026-10-26 17:09:05.449 WARN  [main] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-10-26 17:09:05.510 INFO  [main] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-10-26 17:09:05.530 INFO  [main] c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-10-26 17:09:05.532 INFO  [main] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-10-26 17:09:05.542 INFO  [main] c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-10-26 17:09:05.542 INFO  [main] c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-10-26 17:09:05.542 INFO  [main] c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-10-26 17:09:05.542 INFO  [main] c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-10-26 17:09:05.543 INFO  [main] c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-10-26 17:09:05.543 INFO  [main] c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-10-26 17:09:05.543 INFO  [main] c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-10-26 17:09:05.791 INFO  [main] c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-10-26 17:09:05.793 INFO  [main] c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-10-26 17:09:05.794 INFO  [main] c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-10-26 17:09:05.803 INFO  [main] c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1793045345803 with initial instances count: 2
+2026-10-26 17:09:05.808 INFO  [main] o.s.c.n.e.s.EurekaServiceRegistry - Registering application MS-INVENTARIO with eureka with status UP
+2026-10-26 17:09:05.809 INFO  [main] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1793045345809, current=UP, previous=STARTING]
+2026-10-26 17:09:05.811 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-127.0.0.1-8081"]
+2026-10-26 17:09:05.811 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-INVENTARIO/ms-inventario:8081: registering service...
+2026-10-26 17:09:05.827 INFO  [main] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-10-26 17:09:05.828 INFO  [main] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8081
+2026-10-26 17:09:05.841 INFO  [main] c.f.inventario.InventarioApplication - Started InventarioApplication in 8.962 seconds (process running for 9.401)
+2026-10-26 17:09:05.848 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-INVENTARIO/ms-inventario:8081 - registration status: 204
+2026-10-26 17:10:28.341 INFO  [http-nio-127.0.0.1-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-26 17:10:28.341 INFO  [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-26 17:10:28.347 INFO  [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-10-26 17:10:28.932 INFO  [http-nio-127.0.0.1-8081-exec-1] o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 529 ms
+2026-10-26 17:10:58.566 INFO  [http-nio-127.0.0.1-8081-exec-5] c.f.i.controller.ProductoController - GET por id: 2
+2026-10-26 17:10:59.166 DEBUG [http-nio-127.0.0.1-8081-exec-5] c.f.i.s.impl.ProductoServiceImpl - Buscando por id 2
+2026-10-26 17:10:59.196 DEBUG [http-nio-127.0.0.1-8081-exec-5] org.hibernate.SQL - 
+    select
+        p1_0.id_producto,
+        p1_0.id_categoria,
+        p1_0.codigo,
+        p1_0.descripcion,
+        p1_0.id_marca,
+        p1_0.nombre,
+        p1_0.precio_compra,
+        p1_0.precio_venta 
+    from
+        productos p1_0 
+    where
+        p1_0.id_producto=?
+2026-10-26 17:11:14.427 INFO  [lettuce-eventExecutorLoop-1-1] i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was localhost/127.0.0.1:6379
+2026-10-26 17:11:14.427 INFO  [lettuce-eventExecutorLoop-1-2] i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was localhost/127.0.0.1:6379
+2026-10-26 17:11:14.438 WARN  [lettuce-nioEventLoop-4-4] i.l.core.protocol.ConnectionWatchdog - Cannot reconnect to [localhost/<unresolved>:6379]: Connection closed prematurely
+io.lettuce.core.RedisConnectionException: Connection closed prematurely
+	at io.lettuce.core.protocol.RedisHandshakeHandler.channelInactive(RedisHandshakeHandler.java:76)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:251)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:81)
+	at io.lettuce.core.ChannelGroupListener.channelInactive(ChannelGroupListener.java:54)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:251)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelInactive(DefaultChannelPipeline.java:1424)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:876)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$6.run(AbstractChannel.java:676)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:148)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:141)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:535)
+	at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:201)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1204)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-10-26 17:11:14.438 WARN  [lettuce-nioEventLoop-4-3] i.l.core.protocol.ConnectionWatchdog - Cannot reconnect to [localhost/<unresolved>:6379]: Connection closed prematurely
+io.lettuce.core.RedisConnectionException: Connection closed prematurely
+	at io.lettuce.core.protocol.RedisHandshakeHandler.channelInactive(RedisHandshakeHandler.java:76)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:251)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:81)
+	at io.lettuce.core.ChannelGroupListener.channelInactive(ChannelGroupListener.java:54)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:251)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelInactive(DefaultChannelPipeline.java:1424)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:876)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$6.run(AbstractChannel.java:676)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:148)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:141)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:535)
+	at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:201)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1204)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-10-26 17:11:17.465 INFO  [http-nio-127.0.0.1-8081-exec-6] c.f.i.controller.ProductoController - GET por id: 2
+2026-10-26 17:11:17.465 WARN  [http-nio-127.0.0.1-8081-exec-6] c.f.i.config.ResilientCacheManager - Redis no disponible (get en 'productos'): se usa solo la base de datos durante 30 s. Causa: Redis exception
+2026-10-26 17:11:17.553 DEBUG [http-nio-127.0.0.1-8081-exec-6] c.f.i.s.impl.ProductoServiceImpl - Buscando por id 2
+2026-10-26 17:11:17.553 DEBUG [http-nio-127.0.0.1-8081-exec-6] org.hibernate.SQL - 
+    select
+        p1_0.id_producto,
+        p1_0.id_categoria,
+        p1_0.codigo,
+        p1_0.descripcion,
+        p1_0.id_marca,
+        p1_0.nombre,
+        p1_0.precio_compra,
+        p1_0.precio_venta 
+    from
+        productos p1_0 
+    where
+        p1_0.id_producto=?
+2026-10-26 17:11:19.829 INFO  [lettuce-eventExecutorLoop-1-9] i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was localhost/<unresolved>:6379
+2026-10-26 17:11:19.832 WARN  [lettuce-nioEventLoop-4-1] i.l.core.protocol.ConnectionWatchdog - Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-10-26 17:11:20.429 INFO  [lettuce-eventExecutorLoop-1-10] i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was localhost/<unresolved>:6379
+2026-10-26 17:11:20.429 WARN  [lettuce-nioEventLoop-4-2] i.l.core.protocol.ConnectionWatchdog - Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-10-26 17:11:20.721 INFO  [http-nio-127.0.0.1-8081-exec-7] c.f.i.controller.ProductoController - GET por id: 2
+2026-10-26 17:11:20.976 DEBUG [http-nio-127.0.0.1-8081-exec-7] c.f.i.s.impl.ProductoServiceImpl - Buscando por id 2
+2026-10-26 17:11:20.976 DEBUG [http-nio-127.0.0.1-8081-exec-7] org.hibernate.SQL - 
+    select
+        p1_0.id_producto,
+        p1_0.id_categoria,
+        p1_0.codigo,
+        p1_0.descripcion,
+        p1_0.id_marca,
+        p1_0.nombre,
+        p1_0.precio_compra,
+        p1_0.precio_venta 
+    from
+        productos p1_0 
+    where
+        p1_0.id_producto=?
+2026-10-26 17:11:26.102 INFO  [http-nio-127.0.0.1-8081-exec-9] c.f.i.controller.ProductoController - GET por id: 35
+2026-10-26 17:11:26.207 DEBUG [http-nio-127.0.0.1-8081-exec-9] c.f.i.s.impl.ProductoServiceImpl - Buscando por id 35
+2026-10-26 17:11:26.208 DEBUG [http-nio-127.0.0.1-8081-exec-9] org.hibernate.SQL - 
+    select
+        p1_0.id_producto,
+        p1_0.id_categoria,
+        p1_0.codigo,
+        p1_0.descripcion,
+        p1_0.id_marca,
+        p1_0.nombre,
+        p1_0.precio_compra,
+        p1_0.precio_venta 
+    from
+        productos p1_0 
+    where
+        p1_0.id_producto=?
+2026-10-26 17:11:32.321 INFO  [lettuce-eventExecutorLoop-1-5] i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was localhost/<unresolved>:6379
+2026-10-26 17:11:32.321 WARN  [lettuce-nioEventLoop-4-5] i.l.core.protocol.ConnectionWatchdog - Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-10-26 17:11:32.829 INFO  [lettuce-eventExecutorLoop-1-6] i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was localhost/<unresolved>:6379
+2026-10-26 17:11:32.844 WARN  [lettuce-nioEventLoop-4-6] i.l.core.protocol.ConnectionWatchdog - Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-10-26 17:11:48.720 INFO  [lettuce-eventExecutorLoop-1-9] i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was localhost/<unresolved>:6379
+2026-10-26 17:11:48.721 WARN  [lettuce-nioEventLoop-4-8] i.l.core.protocol.ConnectionWatchdog - Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-10-26 17:11:49.318 INFO  [lettuce-eventExecutorLoop-1-10] i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was localhost/<unresolved>:6379
+2026-10-26 17:11:49.320 WARN  [lettuce-nioEventLoop-4-7] i.l.core.protocol.ConnectionWatchdog - Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-10-26 17:12:18.831 INFO  [lettuce-eventExecutorLoop-1-1] i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was localhost/<unresolved>:6379
+2026-10-26 17:12:18.855 INFO  [lettuce-nioEventLoop-4-9] i.l.c.protocol.ReconnectionHandler - Reconnected to localhost/<unresolved>:6379
+2026-10-26 17:12:19.424 INFO  [lettuce-eventExecutorLoop-1-2] i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was localhost/<unresolved>:6379
+2026-10-26 17:12:19.433 INFO  [lettuce-nioEventLoop-4-10] i.l.c.protocol.ReconnectionHandler - Reconnected to localhost/<unresolved>:6379
+2026-10-26 17:16:26.069 INFO  [main] c.f.inventario.InventarioApplication - Starting InventarioApplication using Java 21.0.12.1 with PID 20876 (C:\Users\Marti\Desktop\FerreteriaLujan-Distri\ms-inventario\target\classes started by Marti in C:\Users\Marti\Desktop\FerreteriaLujan-Distri\ms-inventario)
+2026-10-26 17:16:26.071 INFO  [main] c.f.inventario.InventarioApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-26 17:16:26.343 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-10-26 17:16:26.849 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-10-26 17:16:26.850 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-26 17:16:26.964 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 107 ms. Found 7 JPA repository interfaces.
+2026-10-26 17:16:26.979 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-10-26 17:16:26.980 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-10-26 17:16:26.994 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.inventario.repository.CategoriaProductoRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:16:26.994 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.inventario.repository.DepositoRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:16:26.995 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.inventario.repository.DetalleTransferenciaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:16:26.996 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.inventario.repository.InventarioRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:16:26.997 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.inventario.repository.MarcaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:16:26.997 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.inventario.repository.ProductoRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:16:26.997 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.inventario.repository.TransferenciaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:16:26.998 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2026-10-26 17:16:27.216 INFO  [main] o.s.cloud.context.scope.GenericScope - BeanFactory id=aebe58e5-2980-34ce-a727-c4b8c20c1b53
+2026-10-26 17:16:27.560 INFO  [main] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-10-26 17:16:27.580 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-127.0.0.1-8081"]
+2026-10-26 17:16:27.583 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-26 17:16:27.583 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-26 17:16:27.638 INFO  [main] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1532 ms
+2026-10-26 17:16:27.794 INFO  [main] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-26 17:16:27.834 INFO  [main] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-26 17:16:28.149 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-26 17:16:28.172 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-26 17:16:29.621 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5b827796
+2026-10-26 17:16:29.622 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-26 17:16:30.327 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://aws-0-sa-east-1.pooler.supabase.com:5432/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-26 17:16:31.373 INFO  [main] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-26 17:16:31.381 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-26 17:16:31.458 INFO  [main] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-26 17:18:08.898 INFO  [main] c.f.inventario.InventarioApplication - Starting InventarioApplication using Java 21.0.12.1 with PID 15012 (C:\Users\Marti\Desktop\FerreteriaLujan-Distri\ms-inventario\target\classes started by Marti in C:\Users\Marti\Desktop\FerreteriaLujan-Distri\ms-inventario)
+2026-10-26 17:18:08.898 INFO  [main] c.f.inventario.InventarioApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-26 17:18:09.183 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-10-26 17:18:09.734 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-10-26 17:18:09.734 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-26 17:18:09.876 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 128 ms. Found 7 JPA repository interfaces.
+2026-10-26 17:18:09.889 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-10-26 17:18:09.889 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-10-26 17:18:09.892 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.inventario.repository.CategoriaProductoRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:18:09.892 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.inventario.repository.DepositoRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:18:09.892 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.inventario.repository.DetalleTransferenciaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:18:09.892 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.inventario.repository.InventarioRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:18:09.892 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.inventario.repository.MarcaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:18:09.892 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.inventario.repository.ProductoRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:18:09.892 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.inventario.repository.TransferenciaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:18:09.892 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2026-10-26 17:18:10.124 INFO  [main] o.s.cloud.context.scope.GenericScope - BeanFactory id=aebe58e5-2980-34ce-a727-c4b8c20c1b53
+2026-10-26 17:18:10.478 INFO  [main] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-10-26 17:18:10.492 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-127.0.0.1-8081"]
+2026-10-26 17:18:10.492 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-26 17:18:10.492 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-26 17:18:10.541 INFO  [main] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1603 ms
+2026-10-26 17:18:10.698 INFO  [main] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-26 17:18:10.733 INFO  [main] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-26 17:18:11.063 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-26 17:18:11.082 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-26 17:18:15.160 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5b827796
+2026-10-26 17:18:15.163 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-26 17:18:19.363 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://aws-0-sa-east-1.pooler.supabase.com:5432/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-26 17:18:20.653 INFO  [main] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-26 17:18:20.664 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-26 17:18:20.765 INFO  [main] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-26 17:18:22.675 INFO  [main] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestClient.
+2026-10-26 17:18:22.716 WARN  [main] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-10-26 17:18:22.811 INFO  [main] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-10-26 17:18:22.837 INFO  [main] c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-10-26 17:18:22.847 INFO  [main] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-10-26 17:18:22.850 INFO  [main] c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-10-26 17:18:22.850 INFO  [main] c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-10-26 17:18:22.850 INFO  [main] c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-10-26 17:18:22.850 INFO  [main] c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-10-26 17:18:22.850 INFO  [main] c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-10-26 17:18:22.850 INFO  [main] c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-10-26 17:18:22.850 INFO  [main] c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-10-26 17:18:23.222 INFO  [main] c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-10-26 17:18:23.222 INFO  [main] c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-10-26 17:18:23.222 INFO  [main] c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-10-26 17:18:23.222 INFO  [main] c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1793045903222 with initial instances count: 1
+2026-10-26 17:18:23.232 INFO  [main] o.s.c.n.e.s.EurekaServiceRegistry - Registering application MS-INVENTARIO with eureka with status UP
+2026-10-26 17:18:23.232 INFO  [main] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1793045903232, current=UP, previous=STARTING]
+2026-10-26 17:18:23.236 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-127.0.0.1-8081"]
+2026-10-26 17:18:23.236 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-INVENTARIO/ms-inventario:8081: registering service...
+2026-10-26 17:18:23.257 INFO  [main] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-10-26 17:18:23.257 INFO  [main] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8081
+2026-10-26 17:18:23.284 INFO  [main] c.f.inventario.InventarioApplication - Started InventarioApplication in 14.891 seconds (process running for 15.361)
+2026-10-26 17:18:23.297 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-INVENTARIO/ms-inventario:8081 - registration status: 204
+2026-10-26 17:20:29.850 INFO  [http-nio-127.0.0.1-8081-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-26 17:20:29.850 INFO  [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-26 17:20:29.850 INFO  [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-10-26 17:20:30.440 INFO  [http-nio-127.0.0.1-8081-exec-3] o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 534 ms
+2026-10-26 17:21:48.697 INFO  [http-nio-127.0.0.1-8081-exec-1] c.f.i.controller.MarcaController - GET por id: 2
+2026-10-26 17:21:49.409 DEBUG [http-nio-127.0.0.1-8081-exec-1] c.f.i.service.impl.MarcaServiceImpl - Buscando por id 2
+2026-10-26 17:21:49.447 DEBUG [http-nio-127.0.0.1-8081-exec-1] org.hibernate.SQL - 
+    select
+        m1_0.id_marca,
+        m1_0.nombre 
+    from
+        marcas m1_0 
+    where
+        m1_0.id_marca=?
+2026-10-26 17:21:49.552 WARN  [http-nio-127.0.0.1-8081-exec-1] c.f.i.service.impl.MarcaServiceImpl - Registro 2 no encontrado
+2026-10-26 17:21:49.642 WARN  [http-nio-127.0.0.1-8081-exec-1] c.f.i.e.GlobalExceptionHandler - 404 /api/marcas/2: Registro con id 2 no encontrado
+2026-10-26 17:22:01.146 INFO  [http-nio-127.0.0.1-8081-exec-5] c.f.i.controller.ProductoController - GET por id: 2
+2026-10-26 17:22:01.227 DEBUG [http-nio-127.0.0.1-8081-exec-5] c.f.i.s.impl.ProductoServiceImpl - Buscando por id 2
+2026-10-26 17:22:01.229 DEBUG [http-nio-127.0.0.1-8081-exec-5] org.hibernate.SQL - 
+    select
+        p1_0.id_producto,
+        p1_0.id_categoria,
+        p1_0.codigo,
+        p1_0.descripcion,
+        p1_0.id_marca,
+        p1_0.nombre,
+        p1_0.precio_compra,
+        p1_0.precio_venta 
+    from
+        productos p1_0 
+    where
+        p1_0.id_producto=?
+2026-10-26 17:22:08.635 INFO  [http-nio-127.0.0.1-8081-exec-4] c.f.i.controller.ProductoController - GET por id: 35
+2026-10-26 17:22:08.712 DEBUG [http-nio-127.0.0.1-8081-exec-4] c.f.i.s.impl.ProductoServiceImpl - Buscando por id 35
+2026-10-26 17:22:08.713 DEBUG [http-nio-127.0.0.1-8081-exec-4] org.hibernate.SQL - 
+    select
+        p1_0.id_producto,
+        p1_0.id_categoria,
+        p1_0.codigo,
+        p1_0.descripcion,
+        p1_0.id_marca,
+        p1_0.nombre,
+        p1_0.precio_compra,
+        p1_0.precio_venta 
+    from
+        productos p1_0 
+    where
+        p1_0.id_producto=?
+2026-10-26 17:22:10.425 INFO  [http-nio-127.0.0.1-8081-exec-6] c.f.i.controller.ProductoController - GET por id: 35
+2026-10-26 17:22:11.354 INFO  [http-nio-127.0.0.1-8081-exec-7] c.f.i.controller.ProductoController - GET por id: 35
+2026-10-26 17:22:11.977 INFO  [http-nio-127.0.0.1-8081-exec-8] c.f.i.controller.ProductoController - GET por id: 35
+2026-10-26 17:22:12.529 INFO  [http-nio-127.0.0.1-8081-exec-9] c.f.i.controller.ProductoController - GET por id: 35
+2026-10-26 17:22:20.186 INFO  [http-nio-127.0.0.1-8081-exec-10] c.f.i.controller.ProductoController - GET por id: 35
+2026-10-26 17:22:25.535 INFO  [http-nio-127.0.0.1-8081-exec-3] c.f.i.controller.ProductoController - GET por id: 36
+2026-10-26 17:22:25.624 DEBUG [http-nio-127.0.0.1-8081-exec-3] c.f.i.s.impl.ProductoServiceImpl - Buscando por id 36
+2026-10-26 17:22:25.631 DEBUG [http-nio-127.0.0.1-8081-exec-3] org.hibernate.SQL - 
+    select
+        p1_0.id_producto,
+        p1_0.id_categoria,
+        p1_0.codigo,
+        p1_0.descripcion,
+        p1_0.id_marca,
+        p1_0.nombre,
+        p1_0.precio_compra,
+        p1_0.precio_venta 
+    from
+        productos p1_0 
+    where
+        p1_0.id_producto=?
+2026-10-26 17:23:22.869 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-10-26 17:27:02.286 INFO  [http-nio-127.0.0.1-8081-exec-6] c.f.i.controller.ProductoController - GET por id: 2
+2026-10-26 17:27:04.830 INFO  [http-nio-127.0.0.1-8081-exec-7] c.f.i.controller.ProductoController - GET por id: 2
+2026-10-26 17:28:22.872 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
