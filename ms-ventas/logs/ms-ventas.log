@@ -1,0 +1,250 @@
+2026-10-25 22:20:01.926 INFO  [main] c.f.ventas.VentasApplication - Starting VentasApplication using Java 21.0.12.1 with PID 10400 (C:\Users\Marti\Desktop\FerreteriaLujan-Distri\ms-ventas2\target\classes started by Marti in C:\Users\Marti\Desktop\FerreteriaLujan-Distri\ms-ventas2)
+2026-10-25 22:20:01.930 INFO  [main] c.f.ventas.VentasApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-25 22:20:02.198 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-10-25 22:20:02.668 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-10-25 22:20:02.668 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-25 22:20:02.788 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 107 ms. Found 6 JPA repository interfaces.
+2026-10-25 22:20:02.812 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-10-25 22:20:02.815 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-10-25 22:20:02.831 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.ventas.repository.ClienteRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-25 22:20:02.833 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.ventas.repository.DetalleFacturaVentaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-25 22:20:02.833 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.ventas.repository.EstadoRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-25 22:20:02.834 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.ventas.repository.FacturaVentaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-25 22:20:02.834 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.ventas.repository.PresupuestoDetalleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-25 22:20:02.834 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.ventas.repository.PresupuestoRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-25 22:20:02.834 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2026-10-25 22:20:03.040 INFO  [main] o.s.cloud.context.scope.GenericScope - BeanFactory id=81c5b73d-43fb-372d-a1c3-3e74793e3625
+2026-10-25 22:20:03.396 INFO  [main] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-10-25 22:20:03.415 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-127.0.0.1-8082"]
+2026-10-25 22:20:03.418 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-25 22:20:03.418 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-25 22:20:03.487 INFO  [main] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1521 ms
+2026-10-25 22:20:03.645 INFO  [main] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-25 22:20:03.709 INFO  [main] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-25 22:20:04.232 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-25 22:20:04.273 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-25 22:20:04.919 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@400d1c30
+2026-10-25 22:20:04.921 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-25 22:20:05.274 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://aws-0-sa-east-1.pooler.supabase.com:5432/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-25 22:20:07.448 INFO  [main] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-25 22:20:07.461 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-25 22:20:07.630 INFO  [main] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-25 22:20:11.100 INFO  [main] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestClient.
+2026-10-25 22:20:11.175 WARN  [main] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-10-25 22:20:11.307 INFO  [main] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-10-25 22:20:11.365 INFO  [main] c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-10-25 22:20:11.371 INFO  [main] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-10-25 22:20:11.383 INFO  [main] c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-10-25 22:20:11.389 INFO  [main] c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-10-25 22:20:11.389 INFO  [main] c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-10-25 22:20:11.389 INFO  [main] c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-10-25 22:20:11.389 INFO  [main] c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-10-25 22:20:11.389 INFO  [main] c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-10-25 22:20:11.389 INFO  [main] c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-10-25 22:20:11.997 INFO  [main] c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-10-25 22:20:12.002 INFO  [main] c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-10-25 22:20:12.005 INFO  [main] c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-10-25 22:20:12.009 INFO  [main] c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1792977612007 with initial instances count: 4
+2026-10-25 22:20:12.020 INFO  [main] o.s.c.n.e.s.EurekaServiceRegistry - Registering application MS-VENTAS with eureka with status UP
+2026-10-25 22:20:12.021 INFO  [main] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1792977612021, current=UP, previous=STARTING]
+2026-10-25 22:20:12.023 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-127.0.0.1-8082"]
+2026-10-25 22:20:12.023 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-VENTAS/ms-ventas:8082: registering service...
+2026-10-25 22:20:12.053 INFO  [main] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-10-25 22:20:12.053 INFO  [main] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8082
+2026-10-25 22:20:12.074 INFO  [main] c.f.ventas.VentasApplication - Started VentasApplication in 10.671 seconds (process running for 11.175)
+2026-10-25 22:20:12.077 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-VENTAS/ms-ventas:8082 - registration status: 204
+2026-10-25 22:21:03.168 INFO  [http-nio-127.0.0.1-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-25 22:21:03.168 INFO  [http-nio-127.0.0.1-8082-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-25 22:21:03.170 INFO  [http-nio-127.0.0.1-8082-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-10-25 22:21:03.867 INFO  [http-nio-127.0.0.1-8082-exec-1] o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 621 ms
+2026-10-26 17:24:19.175 INFO  [main] c.f.ventas.VentasApplication - Starting VentasApplication using Java 21.0.12.1 with PID 2424 (C:\Users\Marti\Desktop\FerreteriaLujan-Distri\ms-ventas\target\classes started by Marti in C:\Users\Marti\Desktop\FerreteriaLujan-Distri\ms-ventas)
+2026-10-26 17:24:19.177 INFO  [main] c.f.ventas.VentasApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-26 17:24:19.503 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-10-26 17:24:19.994 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-10-26 17:24:19.995 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-26 17:24:20.117 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 115 ms. Found 6 JPA repository interfaces.
+2026-10-26 17:24:20.134 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-10-26 17:24:20.135 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-10-26 17:24:20.152 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.ventas.repository.ClienteRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:24:20.161 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.ventas.repository.DetalleFacturaVentaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:24:20.162 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.ventas.repository.EstadoRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:24:20.162 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.ventas.repository.FacturaVentaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:24:20.162 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.ventas.repository.PresupuestoDetalleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:24:20.163 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.ventas.repository.PresupuestoRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:24:20.163 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2026-10-26 17:24:20.402 INFO  [main] o.s.cloud.context.scope.GenericScope - BeanFactory id=845cfcce-d0f8-3ee8-8804-1275dc9d8e8b
+2026-10-26 17:24:20.774 INFO  [main] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-10-26 17:24:20.789 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-127.0.0.1-8082"]
+2026-10-26 17:24:20.792 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-26 17:24:20.792 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-26 17:24:20.877 INFO  [main] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1664 ms
+2026-10-26 17:24:21.058 INFO  [main] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-26 17:24:21.118 INFO  [main] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-26 17:24:21.511 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-26 17:24:21.542 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-26 17:24:23.229 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1e75bef1
+2026-10-26 17:24:23.230 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-26 17:24:23.993 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://aws-0-sa-east-1.pooler.supabase.com:5432/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-26 17:24:25.006 INFO  [main] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-26 17:24:25.011 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-26 17:24:25.087 INFO  [main] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-26 17:24:26.605 INFO  [main] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestClient.
+2026-10-26 17:24:26.639 WARN  [main] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-10-26 17:24:26.700 INFO  [main] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-10-26 17:24:26.721 INFO  [main] c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-10-26 17:24:26.724 INFO  [main] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-10-26 17:24:26.731 INFO  [main] c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-10-26 17:24:26.731 INFO  [main] c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-10-26 17:24:26.731 INFO  [main] c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-10-26 17:24:26.731 INFO  [main] c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-10-26 17:24:26.731 INFO  [main] c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-10-26 17:24:26.731 INFO  [main] c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-10-26 17:24:26.732 INFO  [main] c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-10-26 17:24:26.997 INFO  [main] c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-10-26 17:24:26.998 INFO  [main] c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-10-26 17:24:27.006 INFO  [main] c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-10-26 17:24:27.008 INFO  [main] c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1793046267007 with initial instances count: 3
+2026-10-26 17:24:27.013 INFO  [main] o.s.c.n.e.s.EurekaServiceRegistry - Registering application MS-VENTAS with eureka with status UP
+2026-10-26 17:24:27.013 INFO  [main] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1793046267013, current=UP, previous=STARTING]
+2026-10-26 17:24:27.014 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-127.0.0.1-8082"]
+2026-10-26 17:24:27.015 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-VENTAS/ms-ventas:8082: registering service...
+2026-10-26 17:24:27.031 INFO  [main] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-10-26 17:24:27.031 INFO  [main] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8082
+2026-10-26 17:24:27.041 INFO  [main] c.f.ventas.VentasApplication - Started VentasApplication in 8.352 seconds (process running for 8.812)
+2026-10-26 17:24:27.045 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-VENTAS/ms-ventas:8082 - registration status: 204
+2026-10-26 17:26:33.603 INFO  [http-nio-127.0.0.1-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-26 17:26:33.603 INFO  [http-nio-127.0.0.1-8082-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-26 17:26:33.603 INFO  [http-nio-127.0.0.1-8082-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-10-26 17:26:34.196 INFO  [http-nio-127.0.0.1-8082-exec-1] o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 522 ms
+2026-10-26 17:27:47.977 WARN  [http-nio-127.0.0.1-8082-exec-5] c.f.ventas.security.AuthFilter - 401 /api/clientes/1: Token rechazado: An error occurred while attempting to decode the Jwt: Signed JWT rejected: Invalid signature
+2026-10-26 17:29:08.479 WARN  [http-nio-127.0.0.1-8082-exec-7] c.f.ventas.security.AuthFilter - 401 /api/clientes/1: Token rechazado: An error occurred while attempting to decode the Jwt: Signed JWT rejected: Invalid signature
+2026-10-26 17:29:26.747 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-10-26 17:29:52.747 INFO  [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application MS-VENTAS with eureka with status DOWN
+2026-10-26 17:29:52.748 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1793046592748, current=DOWN, previous=UP]
+2026-10-26 17:29:52.748 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-VENTAS/ms-ventas:8082: registering service...
+2026-10-26 17:29:52.751 INFO  [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-26 17:29:52.753 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-10-26 17:29:52.758 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-VENTAS/ms-ventas:8082 - registration status: 204
+2026-10-26 17:29:52.767 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-26 17:29:52.769 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-10-26 17:29:52.957 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-10-26 17:29:52.958 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2026-10-26 17:29:55.974 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Unregistering ...
+2026-10-26 17:29:55.995 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-VENTAS/ms-ventas:8082 - deregister  status: 200
+2026-10-26 17:29:55.995 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2026-10-26 17:30:09.170 INFO  [main] c.f.ventas.VentasApplication - Starting VentasApplication using Java 21.0.12.1 with PID 23224 (C:\Users\Marti\Desktop\FerreteriaLujan-Distri\ms-ventas\target\classes started by Marti in C:\Users\Marti\Desktop\FerreteriaLujan-Distri\ms-ventas)
+2026-10-26 17:30:09.172 INFO  [main] c.f.ventas.VentasApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-26 17:30:09.471 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-10-26 17:30:09.946 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-10-26 17:30:09.946 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-26 17:30:10.058 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 105 ms. Found 6 JPA repository interfaces.
+2026-10-26 17:30:10.083 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-10-26 17:30:10.084 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-10-26 17:30:10.100 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.ventas.repository.ClienteRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:30:10.103 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.ventas.repository.DetalleFacturaVentaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:30:10.104 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.ventas.repository.EstadoRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:30:10.105 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.ventas.repository.FacturaVentaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:30:10.105 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.ventas.repository.PresupuestoDetalleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:30:10.106 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.ventas.repository.PresupuestoRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-26 17:30:10.106 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2026-10-26 17:30:10.335 INFO  [main] o.s.cloud.context.scope.GenericScope - BeanFactory id=845cfcce-d0f8-3ee8-8804-1275dc9d8e8b
+2026-10-26 17:30:10.690 INFO  [main] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-10-26 17:30:10.702 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-127.0.0.1-8082"]
+2026-10-26 17:30:10.706 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-26 17:30:10.707 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-26 17:30:10.780 INFO  [main] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1568 ms
+2026-10-26 17:30:10.955 INFO  [main] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-26 17:30:11.029 INFO  [main] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-26 17:30:11.411 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-26 17:30:11.446 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-26 17:30:12.889 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1e75bef1
+2026-10-26 17:30:12.891 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-26 17:30:13.514 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://aws-0-sa-east-1.pooler.supabase.com:5432/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-26 17:30:14.580 INFO  [main] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-26 17:30:14.586 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-26 17:30:14.660 INFO  [main] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-26 17:30:16.203 INFO  [main] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestClient.
+2026-10-26 17:30:16.240 WARN  [main] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-10-26 17:30:16.308 INFO  [main] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-10-26 17:30:16.328 INFO  [main] c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-10-26 17:30:16.332 INFO  [main] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-10-26 17:30:16.341 INFO  [main] c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-10-26 17:30:16.341 INFO  [main] c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-10-26 17:30:16.341 INFO  [main] c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-10-26 17:30:16.342 INFO  [main] c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-10-26 17:30:16.342 INFO  [main] c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-10-26 17:30:16.342 INFO  [main] c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-10-26 17:30:16.342 INFO  [main] c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-10-26 17:30:16.622 INFO  [main] c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-10-26 17:30:16.627 INFO  [main] c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-10-26 17:30:16.628 INFO  [main] c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-10-26 17:30:16.630 INFO  [main] c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1793046616630 with initial instances count: 4
+2026-10-26 17:30:16.636 INFO  [main] o.s.c.n.e.s.EurekaServiceRegistry - Registering application MS-VENTAS with eureka with status UP
+2026-10-26 17:30:16.637 INFO  [main] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1793046616637, current=UP, previous=STARTING]
+2026-10-26 17:30:16.639 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-127.0.0.1-8082"]
+2026-10-26 17:30:16.639 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-VENTAS/ms-ventas:8082: registering service...
+2026-10-26 17:30:16.662 INFO  [main] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-10-26 17:30:16.663 INFO  [main] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8082
+2026-10-26 17:30:16.678 INFO  [main] c.f.ventas.VentasApplication - Started VentasApplication in 7.977 seconds (process running for 8.431)
+2026-10-26 17:30:16.680 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-VENTAS/ms-ventas:8082 - registration status: 204
+2026-10-26 17:30:42.565 INFO  [http-nio-127.0.0.1-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-26 17:30:42.565 INFO  [http-nio-127.0.0.1-8082-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-26 17:30:42.565 INFO  [http-nio-127.0.0.1-8082-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-10-26 17:30:43.136 INFO  [http-nio-127.0.0.1-8082-exec-1] o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 499 ms
+2026-10-26 17:31:02.152 INFO  [http-nio-127.0.0.1-8082-exec-5] c.f.v.controller.ClienteController - GET por id: 2
+2026-10-26 17:31:02.659 INFO  [http-nio-127.0.0.1-8082-exec-5] c.f.ventas.cache.LoggingCache - CACHE GET clientes key=2 -> MISS
+2026-10-26 17:31:02.818 DEBUG [http-nio-127.0.0.1-8082-exec-5] org.hibernate.SQL - 
+    select
+        c1_0.id_persona,
+        c1_1.apellido,
+        c1_1.correo,
+        c1_1.direccion,
+        c1_1.fecha_nacimiento,
+        c1_1.nombre,
+        c1_1.ruc,
+        c1_1.telefono,
+        c1_1.tipo_persona,
+        c1_0.ci,
+        c1_0.limite_saldo,
+        c1_0.saldo_actual 
+    from
+        clientes c1_0 
+    join
+        personas c1_1 
+            on c1_0.id_persona=c1_1.id_persona 
+    where
+        c1_0.id_persona=?
+2026-10-26 17:31:03.009 INFO  [http-nio-127.0.0.1-8082-exec-5] c.f.ventas.cache.LoggingCache - CACHE PUT clientes key=2

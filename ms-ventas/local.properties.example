@@ -1,0 +1,14 @@
+# Copiar a local.properties (esta en .gitignore) y completar. No subir credenciales al repositorio.
+DB_HOST=aws-0-<region>.pooler.supabase.com
+DB_PORT=5432
+DB_USER=postgres.<project-ref>
+DB_PSWD=<contrasena-de-la-base>
+
+# Misma clave que ms-seguridad, ms-inventario y ms-cache-redis (minimo 32 caracteres).
+# NO hace falta JWT_REFRESH_SECRET aca: solo la conoce ms-seguridad.
+JWT_SECRET=<la-misma-clave-que-ms-seguridad>
+
+# Redis compartido
+REDIS_HOST=localhost
+REDIS_PORT=6379
+REDIS_PSWD=
