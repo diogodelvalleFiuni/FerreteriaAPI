@@ -1,0 +1,119 @@
+# Todo configurable: cada valor puede sobreescribirse con la variable de entorno indicada.
+
+server:
+  address: ${SERVER_ADDRESS:localhost}   # solo escucha en localhost
+  port: ${SERVER_PORT:8080}
+  servlet:
+    context-path: ${CONTEXT_PATH:/}      # prefijo de todo el gateway. "/" = sin prefijo
+
+spring:
+  config:
+    import: optional:file:./local.properties   # aqui va JWT_SECRET (no se versiona)
+  application:
+    name: ${APP_NAME:api-gateway}
+  cloud:
+    gateway:
+      server:
+        webmvc:            # OJO: este es el prefijo correcto en Spring Cloud 2025.0 (antes era gateway.mvc)
+          # Si hay un proxy/balanceador delante del gateway, indicar su IP (regex) para confiar en sus
+          # cabeceras X-Forwarded-* (correccion CVE-2026-47825). Sin proxy delante, dejarlo sin definir.
+          # trusted-proxies: ${TRUSTED_PROXIES}
+          routes:
+            # ---- ms-inventario ----
+            # INVENTARIO_URI:
+            #   lb://ms-inventario        -> via Eureka (por defecto; ms-inventario debe estar registrado)
+            #   http://localhost:8081     -> directo, sin Eureka (util para probar)
+            - id: inventario
+              uri: ${INVENTARIO_URI:lb://ms-inventario}
+              # Si ms-inventario usa un contexto (CONTEXT_PATH=/inventario), descomentar para anteponerlo:
+              # filters:
+              #   - PrefixPath=/inventario
+              predicates:
+                - Path=/api/productos/**,/api/marcas/**,/api/categorias-productos/**,/api/depositos/**,/api/inventarios/**,/api/transferencias/**,/api/detalles-transferencia/**
+
+            # ---- ms-ventas ----
+            #   lb://ms-ventas            -> via Eureka (por defecto)
+            #   http://localhost:8082     -> directo, sin Eureka
+            - id: ventas
+              uri: ${VENTAS_URI:lb://ms-ventas}
+              predicates:
+                - Path=/api/clientes/**,/api/presupuestos/**,/api/presupuestos-detalle/**,/api/facturas-ventas/**,/api/detalles-facturas-ventas/**
+
+            # ---- ms-compras ----
+            #   lb://ms-compras            -> via Eureka (por defecto)
+            #   http://localhost:8083     -> directo, sin Eureka
+            - id: compras
+              uri: ${COMPRAS_URI:lb://ms-compras}
+              predicates:
+                - Path=/api/compras/**,/api/proveedores/**
+            # ---- ms-seguridad ----
+            - id: seguridad
+              uri: ${SEGURIDAD_URI:lb://ms-seguridad}
+              predicates:
+                - Path=/api/auth/**,/api/usuarios/**
+
+            # ---- Swagger comun: el gateway sirve UNA interfaz (http://localhost:8080/swagger-ui.html) que carga ----
+            # ---- la documentacion OpenAPI de cada microservicio a traves de estas rutas.                       ----
+            # SetPath: /docs/<servicio> se reenvia al /v3/api-docs del microservicio.
+            - id: inventario-docs
+              uri: ${INVENTARIO_URI:lb://ms-inventario}
+              predicates:
+                - Path=/docs/inventario
+              filters:
+                - SetPath=${INVENTARIO_DOCS_PATH:/v3/api-docs}
+
+            - id: ventas-docs
+              uri: ${VENTAS_URI:lb://ms-ventas}
+              predicates:
+                - Path=/docs/ventas
+              filters:
+                - SetPath=${VENTAS_DOCS_PATH:/v3/api-docs}
+
+            - id: compras-docs
+              uri: ${COMPRAS_URI:lb://ms-compras}
+              predicates:
+                - Path=/docs/compras
+              filters:
+                - SetPath=${COMPRAS_DOCS_PATH:/v3/api-docs}
+
+# ---- Eureka (cliente) ----
+eureka:
+  client:
+    enabled: ${EUREKA_ENABLED:true}      # false = el gateway arranca sin Eureka
+    service-url:
+      defaultZone: ${EUREKA_URL:http://localhost:8761/eureka/}
+  instance:
+    hostname: ${EUREKA_INSTANCE_HOSTNAME:localhost}
+    prefer-ip-address: ${EUREKA_PREFER_IP:false}
+
+# ---- Seguridad JWT (el secret debe ser el mismo con el que firma el servicio de autenticacion) ----
+security:
+  jwt:
+    enabled: ${JWT_ENABLED:true}         # false = no valida tokens (solo para pruebas)
+    secret: ${JWT_SECRET}                # sin valor por defecto: debe ser el MISMO que ms-seguridad / ms-inventario
+    public-paths: ${JWT_PUBLIC_PATHS:/api/auth/login,/api/auth/refresh,/docs/,/webjars/,/swagger-ui,/v3/api-docs,/actuator/health,/favicon.ico}
+
+# ---- Swagger comun: definiciones que muestra la interfaz (url relativa a /swagger-ui.html) ----
+app:
+  swagger:
+    definitions:
+      - name: Inventario
+        url: docs/inventario
+      - name: Ventas
+        url: docs/ventas
+      - name: Compras
+        url: docs/compras
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ${ACTUATOR_ENDPOINTS:health,info}
+
+logging:
+  file:
+    name: ${LOG_FILE:logs/api-gateway.log}   # logs a disco (rotacion automatica de Spring Boot)
+  level:
+    root: ${LOG_LEVEL_ROOT:INFO}
+    com.ferreteria.apigateway: ${LOG_LEVEL_APP:INFO}
+    org.springframework.cloud.gateway: ${LOG_LEVEL_GATEWAY:INFO}

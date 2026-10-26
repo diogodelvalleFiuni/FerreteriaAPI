@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>API Gateway - Swagger</title>
+    <meta name="color-scheme" content="dark">
+    <!-- Rutas relativas: funcionan tambien si el gateway usa un CONTEXT_PATH -->
+    <link rel="stylesheet" href="webjars/swagger-ui/5.32.14/swagger-ui.css">
+    <style>
+        :root {
+            color-scheme: dark;
+            --bg: #121417;
+            --panel: #1b1f24;
+            --panel-2: #232830;
+            --border: #333a44;
+            --text: #e3e8ef;
+            --muted: #9aa5b4;
+            --accent: #5aa9ff;
+        }
+
+        /* ---------- pagina y bloques por microservicio ---------- */
+        body { margin: 0; background: var(--bg); color: var(--text); font-family: sans-serif; }
+        .page { max-width: 1460px; margin: 0 auto; padding: 0 20px 40px; }
+        .token-bar { display: flex; gap: 10px; align-items: center; padding: 16px 0; color: var(--text); }
+        #token { font-family: Consolas, monospace; font-size: 12px; }
+        .token-bar input {
+            flex: 1; padding: 8px 10px; border: 1px solid var(--border); border-radius: 4px;
+            background: var(--panel-2); color: var(--text);
+        }
+        details.svc { margin: 12px 0; border: 1px solid var(--border); border-radius: 6px; background: var(--panel); }
+        details.svc > summary {
+            cursor: pointer; padding: 14px 18px; font-size: 20px; font-weight: 700;
+            background: #2a3342; color: #fff; border-radius: 6px; list-style: none;
+        }
+        details.svc[open] > summary { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+        details.svc > summary::before { content: "\25B6"; display: inline-block; margin-right: 10px; font-size: 14px; transition: transform .15s; }
+        details.svc[open] > summary::before { transform: rotate(90deg); }
+        details.svc > summary::-webkit-details-marker { display: none; }
+
+        /* ---------- Swagger UI en oscuro ---------- */
+        .swagger-ui { color: var(--text); }
+        .swagger-ui .wrapper { padding: 0 16px; }
+
+        /* textos que Swagger fija en gris oscuro */
+        .swagger-ui .info .title, .swagger-ui .info p, .swagger-ui .info li, .swagger-ui .info table,
+        .swagger-ui .opblock-tag, .swagger-ui .opblock-tag small,
+        .swagger-ui .opblock .opblock-summary-description, .swagger-ui .opblock .opblock-summary-operation-id,
+        .swagger-ui .opblock .opblock-summary-path, .swagger-ui .opblock .opblock-summary-path__deprecated,
+        .swagger-ui .opblock .opblock-section-header h4, .swagger-ui .opblock .opblock-section-header label,
+        .swagger-ui .opblock-description-wrapper, .swagger-ui .opblock-description-wrapper p,
+        .swagger-ui .opblock-external-docs-wrapper, .swagger-ui .opblock-title_normal,
+        .swagger-ui .opblock-title_normal p, .swagger-ui .opblock-title_normal h4,
+        .swagger-ui table thead tr td, .swagger-ui table thead tr th,
+        .swagger-ui .parameter__name, .swagger-ui .parameter__type, .swagger-ui .parameter__deprecated,
+        .swagger-ui .parameter__in, .swagger-ui .parameters-col_description p,
+        .swagger-ui .response-col_status, .swagger-ui .response-col_description,
+        .swagger-ui .response-col_links, .swagger-ui .responses-inner h4, .swagger-ui .responses-inner h5,
+        .swagger-ui .tab li, .swagger-ui .tab li button.tablinks,
+        .swagger-ui label, .swagger-ui .model-title, .swagger-ui .model, .swagger-ui .models-control,
+        .swagger-ui section.models h4, .swagger-ui section.models h5,
+        .swagger-ui .prop-type, .swagger-ui .prop-format, .swagger-ui .prop-enum,
+        .swagger-ui .renderedMarkdown, .swagger-ui .renderedMarkdown p, .swagger-ui .markdown p,
+        .swagger-ui .markdown li, .swagger-ui .servers > label, .swagger-ui .servers-title,
+        .swagger-ui .scheme-container .schemes > label, .swagger-ui .errors-wrapper .errors h4,
+        .swagger-ui .errors-wrapper .errors small, .swagger-ui .loading-container .loading:after,
+        .swagger-ui .dialog-ux .modal-ux-header h3, .swagger-ui .dialog-ux .modal-ux-content p,
+        .swagger-ui .dialog-ux .modal-ux-content h4, .swagger-ui .dialog-ux .modal-ux-content h5,
+        .swagger-ui .response-control-media-type__title, .swagger-ui .responses-table .response-col_description__inner p {
+            color: var(--text);
+        }
+        .swagger-ui .info a, .swagger-ui .markdown a, .swagger-ui .renderedMarkdown a { color: var(--accent); }
+        .swagger-ui .opblock-tag small, .swagger-ui .parameter__in, .swagger-ui .prop-format,
+        .swagger-ui .model-title__text small, .swagger-ui .info .base-url { color: var(--muted); }
+
+        /* grupos de endpoints (tags) */
+        .swagger-ui .opblock-tag { border-bottom: 1px solid var(--border); }
+        .swagger-ui .opblock-tag:hover { background: rgba(255, 255, 255, .05); }
+        .swagger-ui .opblock-tag svg, .swagger-ui .expand-methods svg, .swagger-ui .expand-operation svg,
+        .swagger-ui .arrow, .swagger-ui .model-toggle + * svg, .swagger-ui .authorization__btn svg,
+        .swagger-ui .opblock .opblock-summary-control svg, .swagger-ui .copy-to-clipboard svg { fill: var(--text); }
+        .swagger-ui .expand-methods:hover svg, .swagger-ui .expand-operation:hover svg { fill: #fff; }
+        .swagger-ui .model-toggle:after { filter: invert(1); }
+
+        /* endpoints: los colores por metodo se mantienen, solo se oscurece lo demas */
+        .swagger-ui .opblock .opblock-section-header { background: rgba(0, 0, 0, .3); box-shadow: none; }
+        .swagger-ui .opblock .opblock-summary-method { color: #fff; }
+        .swagger-ui .opblock-body pre.microlight, .swagger-ui .highlight-code > .microlight code,
+        .swagger-ui .highlight-code pre { background: #0d0f12 !important; color: #e6edf3; }
+        .swagger-ui .opblock-body pre.microlight span { color: inherit !important; }
+        .swagger-ui .copy-to-clipboard { background: var(--panel-2); }
+
+        /* tablas */
+        .swagger-ui table tbody tr td { border-bottom: 1px solid var(--border); color: var(--text); }
+        .swagger-ui table thead tr td, .swagger-ui table thead tr th { border-bottom: 1px solid var(--border); }
+        .swagger-ui .responses-inner, .swagger-ui .responses-table { background: transparent; }
+        .swagger-ui .parameters-col_description input[type=text] { width: 100%; max-width: 340px; }
+
+        /* formularios */
+        .swagger-ui select, .swagger-ui input[type=text], .swagger-ui input[type=password],
+        .swagger-ui input[type=search], .swagger-ui input[type=email], .swagger-ui input[type=file],
+        .swagger-ui textarea {
+            background: var(--panel-2); color: var(--text); border: 1px solid #4a5360;
+        }
+        .swagger-ui select { background-color: var(--panel-2); box-shadow: none; }
+        .swagger-ui input::placeholder, .swagger-ui textarea::placeholder { color: var(--muted); }
+        .swagger-ui textarea.curl { background: #0d0f12; color: #e6edf3; }
+        .swagger-ui .scheme-container { background: var(--panel); box-shadow: none; border-bottom: 1px solid var(--border); }
+
+        /* botones */
+        .swagger-ui .btn { color: var(--text); border-color: #6b7686; background: transparent; box-shadow: none; }
+        .swagger-ui .btn:hover { box-shadow: 0 0 0 1px #6b7686; }
+        .swagger-ui .btn.execute { background: #4990e2; border-color: #4990e2; color: #fff; }
+        .swagger-ui .btn.cancel { border-color: #f93e3e; color: #f93e3e; }
+        .swagger-ui .btn.authorize { color: #49cc90; border-color: #49cc90; }
+        .swagger-ui .btn.authorize svg { fill: #49cc90; }
+
+        /* modelos / esquemas */
+        .swagger-ui section.models { border: 1px solid var(--border); background: transparent; }
+        .swagger-ui section.models.is-open h4 { border-bottom: 1px solid var(--border); }
+        .swagger-ui section.models .model-container { background: rgba(255, 255, 255, .04); }
+        .swagger-ui .model-box { background: transparent; }
+        .swagger-ui .model .property.primitive { color: var(--muted); }
+        .swagger-ui .model-toggle { color: var(--text); }
+
+        /* codigo inline en markdown */
+        .swagger-ui .markdown code, .swagger-ui .renderedMarkdown code {
+            background: rgba(255, 255, 255, .1); color: #ff9c9c;
+        }
+
+        /* errores y modales */
+        .swagger-ui .errors-wrapper { background: rgba(249, 62, 62, .12); border: 2px solid #f93e3e; }
+        .swagger-ui .dialog-ux .modal-ux { background: var(--panel); border: 1px solid var(--border); }
+        .swagger-ui .dialog-ux .modal-ux-header { border-bottom: 1px solid var(--border); }
+        .swagger-ui .dialog-ux .backdrop-ux { background: rgba(0, 0, 0, .6); }
+    </style>
+</head>
+<body>
+<div class="page">
+    <!-- Login: muestra el token para copiarlo. NO se usa como auth hasta pegarlo manualmente en el boton Authorize de cada microservicio -->
+    <div class="token-bar">
+        <input id="user" type="text" placeholder="usuario" autocomplete="username" style="flex:0 0 160px">
+        <input id="pass" type="password" placeholder="clave" autocomplete="current-password" style="flex:0 0 160px">
+        <button id="loginBtn" type="button">Iniciar sesión</button>
+        <input id="token" type="text" readonly spellcheck="false" autocomplete="off"
+               placeholder="Aquí aparecerá el token. Cópialo y pégalo en Authorize (sin la palabra Bearer)">
+        <button id="copyBtn" type="button">Copiar</button>
+    </div>
+    <div id="services"></div>
+</div>
+
+<script src="webjars/swagger-ui/5.32.14/swagger-ui-bundle.js"></script>
+<script>
+    // Login: pide el token a ms-seguridad a traves del gateway (/api/auth/login es ruta publica).
+    async function iniciarSesion() {
+        const res = await fetch('api/auth/login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                username: document.getElementById('user').value.trim(),
+                password: document.getElementById('pass').value
+            })
+        });
+        if (res.ok) {
+            const data = await res.json();
+            document.getElementById('token').value = data.token;
+            document.getElementById('pass').value = '';
+        } else {
+            alert('Login fallido (' + res.status + ')');
+        }
+    }
+    document.getElementById('loginBtn').addEventListener('click', iniciarSesion);
+    document.getElementById('copyBtn').addEventListener('click', async function () {
+        const t = document.getElementById('token');
+        if (!t.value) return;
+        try { await navigator.clipboard.writeText(t.value); }
+        catch (e) { t.select(); document.execCommand('copy'); }
+    });
+    document.getElementById('pass').addEventListener('keydown', function (e) {
+        if (e.key === 'Enter') iniciarSesion();
+    });
+</script>
+<script>
+    // La lista de microservicios sale de app.swagger.definitions (application.yml del gateway).
+    // Cada uno se muestra en su propio bloque plegable, todos en la misma pagina.
+    window.onload = async function () {
+        const container = document.getElementById('services');
+        const response = await fetch('docs/definitions');
+        const config = await response.json();
+
+        config.urls.forEach(function (def, i) {
+            const details = document.createElement('details');
+            details.className = 'svc';
+            details.open = true;
+
+            const summary = document.createElement('summary');
+            summary.textContent = def.name;
+            details.appendChild(summary);
+
+            const holder = document.createElement('div');
+            holder.id = 'swagger-' + i;
+            details.appendChild(holder);
+            container.appendChild(details);
+
+            SwaggerUIBundle({
+                url: def.url,
+                dom_id: '#' + holder.id,
+                presets: [SwaggerUIBundle.presets.apis],
+                layout: 'BaseLayout',
+                deepLinking: false,          // con varias instancias en la pagina, los enlaces profundos se pisan
+                docExpansion: 'list',        // grupos de endpoints visibles; cada uno se pliega con su flecha
+                requestInterceptor: function (req) {
+                    // Forzar que todo "Try it out" pase por el gateway (mismo origen), no por el puerto del microservicio
+                    try {
+                        const u = new URL(req.url, window.location.href);
+                        if (u.origin !== window.location.origin) {
+                            req.url = window.location.origin + u.pathname + u.search;
+                        }
+                    } catch (e) { /* url relativa: se deja igual */ }
+
+                    // El token NO se agrega aqui: solo se envia si se autoriza manualmente con el boton Authorize.
+                    return req;
+                }
+            });
+        });
+    };
+</script>
+</body>
+</html>

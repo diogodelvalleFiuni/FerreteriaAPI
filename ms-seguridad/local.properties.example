@@ -1,0 +1,16 @@
+# Copiar a local.properties (NO versionar: ya esta en .gitignore)
+DB_HOST=<host-de-supabase>
+DB_PORT=5432
+DB_USER=<usuario>
+DB_PSWD=<password>
+
+# Access token: MISMA clave que ms-inventario y ms-cache-redis (minimo 32 caracteres)
+JWT_SECRET=<misma-clave>
+# Refresh token: clave PROPIA de ms-seguridad, distinta de JWT_SECRET (minimo 32 caracteres).
+# No se la pases a ms-inventario ni a ms-cache-redis.
+JWT_REFRESH_SECRET=<otra-clave-distinta>
+
+# Primer ADMIN (opcional, solo si la tabla usuarios esta vacia; clave de 10 a 72 caracteres).
+# Despues del primer arranque borrar estas dos lineas.
+# BOOTSTRAP_ADMIN_USER=admin
+# BOOTSTRAP_ADMIN_PASSWORD=<clave-larga>
