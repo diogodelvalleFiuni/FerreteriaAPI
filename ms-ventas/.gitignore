@@ -1,0 +1,5 @@
+target/
+logs/
+local.properties
+.idea/
+*.iml

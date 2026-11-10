@@ -1,0 +1,33 @@
+# Todo configurable: cada valor puede sobreescribirse con la variable de entorno indicada.
+
+server:
+  address: ${SERVER_ADDRESS:localhost}   # 0.0.0.0 = aceptar registros de otras maquinas de la red
+  port: ${SERVER_PORT:8761}
+
+spring:
+  application:
+    name: ${APP_NAME:eureka-server}
+
+eureka:
+  instance:
+    hostname: ${EUREKA_HOSTNAME:localhost}
+  client:
+    # Este servidor NO se registra en si mismo ni descarga el registro (es instancia unica)
+    register-with-eureka: ${EUREKA_REGISTER_SELF:false}
+    fetch-registry: ${EUREKA_FETCH_REGISTRY:false}
+  server:
+    # Autopreservacion: si caen muchos heartbeats a la vez, Eureka deja de eliminar instancias.
+    # En desarrollo conviene false para que un servicio apagado desaparezca de la lista.
+    enable-self-preservation: ${EUREKA_SELF_PRESERVATION:false}
+    eviction-interval-timer-in-ms: ${EUREKA_EVICTION_INTERVAL_MS:10000}   # cada cuanto revisa instancias vencidas
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ${ACTUATOR_ENDPOINTS:health,info}
+
+logging:
+  level:
+    root: ${LOG_LEVEL_ROOT:INFO}
+    com.netflix.eureka: ${LOG_LEVEL_EUREKA:INFO}
