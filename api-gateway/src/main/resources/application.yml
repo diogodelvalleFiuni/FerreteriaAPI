@@ -37,7 +37,7 @@ spring:
             - id: ventas
               uri: ${VENTAS_URI:lb://ms-ventas}
               predicates:
-                - Path=/api/clientes/**,/api/presupuestos/**,/api/presupuestos-detalle/**,/api/facturas-ventas/**,/api/detalles-facturas-ventas/**
+                - Path=/api/clientes/**,/api/presupuestos/**,/api/presupuestos-detalle/**,/api/facturas-ventas/**,/api/detalles-facturas-ventas/**,/api/estados/**
 
             # ---- ms-compras ----
             #   lb://ms-compras            -> via Eureka (por defecto)

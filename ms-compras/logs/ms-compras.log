@@ -1,42 +1,29 @@
-2026-10-26 00:01:22.837 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2026-10-26 00:06:22.863 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2026-10-26 00:11:22.869 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2026-10-26 00:16:22.886 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2026-10-26 00:21:22.891 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2026-10-26 00:26:22.904 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2026-10-26 00:31:22.912 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2026-10-26 00:36:22.913 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2026-10-26 00:41:22.918 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2026-10-26 00:46:22.922 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2026-10-26 00:51:22.926 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2026-10-26 00:56:22.929 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2026-10-26 01:01:22.940 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2026-10-26 17:25:17.903 INFO  [main] c.f.compras.ComprasApplication - Starting ComprasApplication using Java 21.0.12.1 with PID 25108 (C:\Users\Marti\Desktop\FerreteriaLujan-Distri\ms-compras\target\classes started by Marti in C:\Users\Marti\Desktop\FerreteriaLujan-Distri\ms-compras)
-2026-10-26 17:25:17.905 INFO  [main] c.f.compras.ComprasApplication - No active profile set, falling back to 1 default profile: "default"
-2026-10-26 17:25:18.183 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
-2026-10-26 17:25:18.638 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2026-10-26 17:25:18.640 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-10-26 17:25:18.749 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 103 ms. Found 4 JPA repository interfaces.
-2026-10-26 17:25:18.763 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2026-10-26 17:25:18.764 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2026-10-26 17:25:18.790 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.compras.repository.DetalleFacturaCompraRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-10-26 17:25:18.791 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.compras.repository.EstadoRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-10-26 17:25:18.791 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.compras.repository.FacturaCompraRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-10-26 17:25:18.794 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.compras.repository.ProveedorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-10-26 17:25:18.794 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
-2026-10-26 17:25:19.011 INFO  [main] o.s.cloud.context.scope.GenericScope - BeanFactory id=0d142dbf-ffb0-3ccd-863a-82fc070a6012
-2026-10-26 17:25:19.346 INFO  [main] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8083 (http)
-2026-10-26 17:25:19.355 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-127.0.0.1-8083"]
-2026-10-26 17:25:19.357 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-10-26 17:25:19.357 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
-2026-10-26 17:25:19.419 INFO  [main] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1475 ms
-2026-10-26 17:25:19.581 INFO  [main] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-10-26 17:25:19.620 INFO  [main] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.5.Final
-2026-10-26 17:25:19.914 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-10-26 17:25:19.937 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-10-26 17:25:21.473 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@50841932
-2026-10-26 17:25:21.474 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-10-26 17:25:22.089 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+2026-11-11 18:02:09.077 INFO  [main] c.f.compras.ComprasApplication - Starting ComprasApplication using Java 21.0.12.1 with PID 27720 (C:\Users\Marti\Desktop\FerreteriaLujan-Distri\ms-compras\target\classes started by Marti in C:\Users\Marti\Desktop\FerreteriaLujan-Distri\ms-compras)
+2026-11-11 18:02:09.103 INFO  [main] c.f.compras.ComprasApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-11 18:02:10.686 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-11-11 18:02:12.761 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-11-11 18:02:12.765 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-11 18:02:13.134 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 355 ms. Found 4 JPA repository interfaces.
+2026-11-11 18:02:13.184 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-11-11 18:02:13.187 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-11-11 18:02:13.249 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.compras.repository.DetalleFacturaCompraRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-11-11 18:02:13.250 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.compras.repository.EstadoRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-11-11 18:02:13.252 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.compras.repository.FacturaCompraRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-11-11 18:02:13.261 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.compras.repository.ProveedorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-11-11 18:02:13.262 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46 ms. Found 0 Redis repository interfaces.
+2026-11-11 18:02:14.312 INFO  [main] o.s.cloud.context.scope.GenericScope - BeanFactory id=0d142dbf-ffb0-3ccd-863a-82fc070a6012
+2026-11-11 18:02:15.905 INFO  [main] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8083 (http)
+2026-11-11 18:02:15.956 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-127.0.0.1-8083"]
+2026-11-11 18:02:15.974 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-11 18:02:15.975 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-11-11 18:02:16.393 INFO  [main] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 7099 ms
+2026-11-11 18:02:17.205 INFO  [main] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-11 18:02:17.420 INFO  [main] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-11-11 18:02:18.769 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-11 18:02:18.853 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-11-11 18:02:20.253 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@92de794
+2026-11-11 18:02:20.255 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-11-11 18:02:20.739 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [jdbc:postgresql://aws-0-sa-east-1.pooler.supabase.com:5432/postgres?sslmode=require]
 	Database driver: PostgreSQL JDBC Driver
 	Database dialect: PostgreSQLDialect
@@ -48,43 +35,49 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-10-26 17:25:23.001 INFO  [main] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-10-26 17:25:23.007 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-10-26 17:25:23.095 INFO  [main] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-10-26 17:25:24.068 INFO  [main] c.f.compras.config.CacheConfig - Cache Redis: prefijo 'compras::', TTL 5 min, secciones [proveedores, facturas-compra, detalles-factura-compra]
-2026-10-26 17:25:25.075 INFO  [main] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestClient.
-2026-10-26 17:25:25.114 WARN  [main] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2026-10-26 17:25:25.173 INFO  [main] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
-2026-10-26 17:25:25.193 INFO  [main] c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
-2026-10-26 17:25:25.197 INFO  [main] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2026-10-26 17:25:25.204 INFO  [main] c.netflix.discovery.DiscoveryClient - Disable delta property : false
-2026-10-26 17:25:25.204 INFO  [main] c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
-2026-10-26 17:25:25.205 INFO  [main] c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
-2026-10-26 17:25:25.205 INFO  [main] c.netflix.discovery.DiscoveryClient - Application is null : false
-2026-10-26 17:25:25.205 INFO  [main] c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
-2026-10-26 17:25:25.205 INFO  [main] c.netflix.discovery.DiscoveryClient - Application version is -1: true
-2026-10-26 17:25:25.205 INFO  [main] c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
-2026-10-26 17:25:25.494 INFO  [main] c.netflix.discovery.DiscoveryClient - The response status is 200
-2026-10-26 17:25:25.496 INFO  [main] c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
-2026-10-26 17:25:25.498 INFO  [main] c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2026-10-26 17:25:25.500 INFO  [main] c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1793046325500 with initial instances count: 4
-2026-10-26 17:25:25.506 INFO  [main] o.s.c.n.e.s.EurekaServiceRegistry - Registering application MS-COMPRAS with eureka with status UP
-2026-10-26 17:25:25.507 INFO  [main] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1793046325507, current=UP, previous=STARTING]
-2026-10-26 17:25:25.509 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-127.0.0.1-8083"]
-2026-10-26 17:25:25.509 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-COMPRAS/ms-compras:8083: registering service...
-2026-10-26 17:25:25.526 INFO  [main] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8083 (http) with context path '/'
-2026-10-26 17:25:25.527 INFO  [main] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8083
-2026-10-26 17:25:25.539 INFO  [main] c.f.compras.ComprasApplication - Started ComprasApplication in 8.087 seconds (process running for 8.537)
-2026-10-26 17:25:25.547 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-COMPRAS/ms-compras:8083 - registration status: 204
-2026-10-26 17:26:33.603 INFO  [http-nio-127.0.0.1-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-10-26 17:26:33.603 INFO  [http-nio-127.0.0.1-8083-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2026-10-26 17:26:33.603 INFO  [http-nio-127.0.0.1-8083-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
-2026-10-26 17:26:34.107 INFO  [http-nio-127.0.0.1-8083-exec-1] o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 431 ms
-2026-10-26 17:30:25.216 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2026-10-26 17:32:46.138 INFO  [http-nio-127.0.0.1-8083-exec-7] c.f.c.controller.ProveedorController - GET por id: 2
-2026-10-26 17:32:46.612 INFO  [http-nio-127.0.0.1-8083-exec-7] c.f.compras.config.LoggingCache - CACHE GET seccion=proveedores clave=2 resultado=MISS (467555 us)
-2026-10-26 17:32:46.724 DEBUG [http-nio-127.0.0.1-8083-exec-7] c.f.c.s.impl.ProveedorServiceImpl - Buscando por id 2
-2026-10-26 17:32:46.764 DEBUG [http-nio-127.0.0.1-8083-exec-7] org.hibernate.SQL - 
+2026-11-11 18:02:23.962 INFO  [main] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-11 18:02:23.976 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-11 18:02:24.125 INFO  [main] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-11-11 18:02:25.711 INFO  [main] c.f.compras.config.CacheConfig - Cache Redis: prefijo 'compras::', TTL 5 min, secciones [proveedores, facturas-compra, detalles-factura-compra]
+2026-11-11 18:02:27.314 INFO  [main] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestClient.
+2026-11-11 18:02:27.366 WARN  [main] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-11-11 18:02:27.532 INFO  [main] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-11-11 18:02:27.565 INFO  [main] c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-11-11 18:02:27.573 INFO  [main] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-11-11 18:02:27.592 INFO  [main] c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-11-11 18:02:27.594 INFO  [main] c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-11-11 18:02:27.594 INFO  [main] c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-11-11 18:02:27.595 INFO  [main] c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-11-11 18:02:27.595 INFO  [main] c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-11-11 18:02:27.595 INFO  [main] c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-11-11 18:02:27.595 INFO  [main] c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-11-11 18:02:28.001 INFO  [main] c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-11-11 18:02:28.003 INFO  [main] c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-11-11 18:02:28.005 INFO  [main] c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-11-11 18:02:28.007 INFO  [main] c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1794430948006 with initial instances count: 0
+2026-11-11 18:02:28.011 INFO  [main] o.s.c.n.e.s.EurekaServiceRegistry - Registering application MS-COMPRAS with eureka with status UP
+2026-11-11 18:02:28.012 INFO  [main] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1794430948012, current=UP, previous=STARTING]
+2026-11-11 18:02:28.013 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-127.0.0.1-8083"]
+2026-11-11 18:02:28.013 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-COMPRAS/ms-compras:8083: registering service...
+2026-11-11 18:02:28.036 INFO  [main] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8083 (http) with context path '/'
+2026-11-11 18:02:28.037 INFO  [main] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8083
+2026-11-11 18:02:28.052 INFO  [main] c.f.compras.ComprasApplication - Started ComprasApplication in 22.046 seconds (process running for 23.775)
+2026-11-11 18:02:28.061 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-COMPRAS/ms-compras:8083 - registration status: 204
+2026-11-11 18:02:58.014 INFO  [DiscoveryClient-CacheRefreshExecutor-%d] c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-11-11 18:02:58.014 INFO  [DiscoveryClient-CacheRefreshExecutor-%d] c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-11-11 18:02:58.015 INFO  [DiscoveryClient-CacheRefreshExecutor-%d] c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-11-11 18:02:58.016 INFO  [DiscoveryClient-CacheRefreshExecutor-%d] c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-11-11 18:02:58.016 INFO  [DiscoveryClient-CacheRefreshExecutor-%d] c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-11-11 18:02:58.017 INFO  [DiscoveryClient-CacheRefreshExecutor-%d] c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2026-11-11 18:02:58.017 INFO  [DiscoveryClient-CacheRefreshExecutor-%d] c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-11-11 18:02:58.041 INFO  [DiscoveryClient-CacheRefreshExecutor-%d] c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-11-11 18:04:48.844 INFO  [http-nio-127.0.0.1-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-11 18:04:48.844 INFO  [http-nio-127.0.0.1-8083-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-11 18:04:48.847 INFO  [http-nio-127.0.0.1-8083-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-11-11 18:04:49.267 INFO  [http-nio-127.0.0.1-8083-exec-1] o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 371 ms
+2026-11-11 18:06:30.234 INFO  [http-nio-127.0.0.1-8083-exec-3] c.f.c.controller.ProveedorController - GET lista paginada: Page request [number: 0, size 100, sort: nombre: ASC]
+2026-11-11 18:06:30.303 INFO  [http-nio-127.0.0.1-8083-exec-3] c.f.c.s.impl.ProveedorServiceImpl - Listando registros: Page request [number: 0, size 100, sort: nombre: ASC]
+2026-11-11 18:06:30.393 DEBUG [http-nio-127.0.0.1-8083-exec-3] org.hibernate.SQL - 
     select
         p1_0.id_persona,
         p1_1.apellido,
@@ -102,13 +95,20 @@
         personas p1_1 
             on p1_0.id_persona=p1_1.id_persona 
     where
-        p1_0.id_persona=?
-2026-10-26 17:32:46.915 WARN  [http-nio-127.0.0.1-8083-exec-7] c.f.c.s.impl.ProveedorServiceImpl - Registro 2 no encontrado
-2026-10-26 17:32:47.010 WARN  [http-nio-127.0.0.1-8083-exec-7] c.f.c.e.GlobalExceptionHandler - 404 /api/proveedores/2: Registro con id 2 no encontrado
-2026-10-26 17:32:50.482 INFO  [http-nio-127.0.0.1-8083-exec-4] c.f.c.controller.ProveedorController - GET por id: 1
-2026-10-26 17:32:50.482 INFO  [http-nio-127.0.0.1-8083-exec-4] c.f.compras.config.LoggingCache - CACHE GET seccion=proveedores clave=1 resultado=MISS (1984 us)
-2026-10-26 17:32:50.573 DEBUG [http-nio-127.0.0.1-8083-exec-4] c.f.c.s.impl.ProveedorServiceImpl - Buscando por id 1
-2026-10-26 17:32:50.579 DEBUG [http-nio-127.0.0.1-8083-exec-4] org.hibernate.SQL - 
+        1=1 
+    order by
+        p1_1.nombre 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2026-11-11 18:06:30.601 WARN  [http-nio-127.0.0.1-8083-exec-3] o.s.d.w.c.SpringDataJackson3Configuration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-11-11 18:06:30.629 INFO  [http-nio-127.0.0.1-8083-exec-4] c.f.c.controller.ProveedorController - GET lista paginada: Page request [number: 0, size 100, sort: nombre: ASC]
+2026-11-11 18:06:30.630 INFO  [http-nio-127.0.0.1-8083-exec-4] c.f.c.s.impl.ProveedorServiceImpl - Listando registros: Page request [number: 0, size 100, sort: nombre: ASC]
+2026-11-11 18:06:30.632 DEBUG [http-nio-127.0.0.1-8083-exec-4] org.hibernate.SQL - 
     select
         p1_0.id_persona,
         p1_1.apellido,
@@ -126,5 +126,177 @@
         personas p1_1 
             on p1_0.id_persona=p1_1.id_persona 
     where
-        p1_0.id_persona=?
-2026-10-26 17:32:50.775 INFO  [http-nio-127.0.0.1-8083-exec-4] c.f.compras.config.LoggingCache - CACHE SET seccion=proveedores clave=1 resultado=ok (42767 us)
+        1=1 
+    order by
+        p1_1.nombre 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2026-11-11 18:06:35.576 INFO  [http-nio-127.0.0.1-8083-exec-5] c.f.c.controller.ProveedorController - GET lista paginada: Page request [number: 0, size 100, sort: nombre: ASC]
+2026-11-11 18:06:35.639 INFO  [http-nio-127.0.0.1-8083-exec-5] c.f.c.s.impl.ProveedorServiceImpl - Listando registros: Page request [number: 0, size 100, sort: nombre: ASC]
+2026-11-11 18:06:35.642 DEBUG [http-nio-127.0.0.1-8083-exec-5] org.hibernate.SQL - 
+    select
+        p1_0.id_persona,
+        p1_1.apellido,
+        p1_1.correo,
+        p1_1.direccion,
+        p1_1.fecha_nacimiento,
+        p1_1.nombre,
+        p1_1.ruc,
+        p1_1.telefono,
+        p1_1.tipo_persona,
+        p1_0.plazo_entrega 
+    from
+        proveedores p1_0 
+    join
+        personas p1_1 
+            on p1_0.id_persona=p1_1.id_persona 
+    where
+        1=1 
+    order by
+        p1_1.nombre 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2026-11-11 18:06:35.780 INFO  [http-nio-127.0.0.1-8083-exec-6] c.f.c.controller.ProveedorController - GET lista paginada: Page request [number: 0, size 100, sort: nombre: ASC]
+2026-11-11 18:06:35.780 INFO  [http-nio-127.0.0.1-8083-exec-6] c.f.c.s.impl.ProveedorServiceImpl - Listando registros: Page request [number: 0, size 100, sort: nombre: ASC]
+2026-11-11 18:06:35.782 DEBUG [http-nio-127.0.0.1-8083-exec-6] org.hibernate.SQL - 
+    select
+        p1_0.id_persona,
+        p1_1.apellido,
+        p1_1.correo,
+        p1_1.direccion,
+        p1_1.fecha_nacimiento,
+        p1_1.nombre,
+        p1_1.ruc,
+        p1_1.telefono,
+        p1_1.tipo_persona,
+        p1_0.plazo_entrega 
+    from
+        proveedores p1_0 
+    join
+        personas p1_1 
+            on p1_0.id_persona=p1_1.id_persona 
+    where
+        1=1 
+    order by
+        p1_1.nombre 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2026-11-11 18:06:37.804 INFO  [http-nio-127.0.0.1-8083-exec-10] c.f.c.controller.ProveedorController - GET lista paginada: Page request [number: 0, size 100, sort: nombre: ASC]
+2026-11-11 18:06:37.869 INFO  [http-nio-127.0.0.1-8083-exec-10] c.f.c.s.impl.ProveedorServiceImpl - Listando registros: Page request [number: 0, size 100, sort: nombre: ASC]
+2026-11-11 18:06:37.869 DEBUG [http-nio-127.0.0.1-8083-exec-10] org.hibernate.SQL - 
+    select
+        p1_0.id_persona,
+        p1_1.apellido,
+        p1_1.correo,
+        p1_1.direccion,
+        p1_1.fecha_nacimiento,
+        p1_1.nombre,
+        p1_1.ruc,
+        p1_1.telefono,
+        p1_1.tipo_persona,
+        p1_0.plazo_entrega 
+    from
+        proveedores p1_0 
+    join
+        personas p1_1 
+            on p1_0.id_persona=p1_1.id_persona 
+    where
+        1=1 
+    order by
+        p1_1.nombre 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2026-11-11 18:06:38.013 INFO  [http-nio-127.0.0.1-8083-exec-8] c.f.c.controller.ProveedorController - GET lista paginada: Page request [number: 0, size 100, sort: nombre: ASC]
+2026-11-11 18:06:38.014 INFO  [http-nio-127.0.0.1-8083-exec-8] c.f.c.s.impl.ProveedorServiceImpl - Listando registros: Page request [number: 0, size 100, sort: nombre: ASC]
+2026-11-11 18:06:38.016 DEBUG [http-nio-127.0.0.1-8083-exec-8] org.hibernate.SQL - 
+    select
+        p1_0.id_persona,
+        p1_1.apellido,
+        p1_1.correo,
+        p1_1.direccion,
+        p1_1.fecha_nacimiento,
+        p1_1.nombre,
+        p1_1.ruc,
+        p1_1.telefono,
+        p1_1.tipo_persona,
+        p1_0.plazo_entrega 
+    from
+        proveedores p1_0 
+    join
+        personas p1_1 
+            on p1_0.id_persona=p1_1.id_persona 
+    where
+        1=1 
+    order by
+        p1_1.nombre 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2026-11-11 18:06:42.506 INFO  [http-nio-127.0.0.1-8083-exec-9] c.f.c.controller.ProveedorController - GET lista paginada: Page request [number: 0, size 100, sort: nombre: ASC]
+2026-11-11 18:06:42.571 INFO  [http-nio-127.0.0.1-8083-exec-9] c.f.c.s.impl.ProveedorServiceImpl - Listando registros: Page request [number: 0, size 100, sort: nombre: ASC]
+2026-11-11 18:06:42.573 DEBUG [http-nio-127.0.0.1-8083-exec-9] org.hibernate.SQL - 
+    select
+        p1_0.id_persona,
+        p1_1.apellido,
+        p1_1.correo,
+        p1_1.direccion,
+        p1_1.fecha_nacimiento,
+        p1_1.nombre,
+        p1_1.ruc,
+        p1_1.telefono,
+        p1_1.tipo_persona,
+        p1_0.plazo_entrega 
+    from
+        proveedores p1_0 
+    join
+        personas p1_1 
+            on p1_0.id_persona=p1_1.id_persona 
+    where
+        1=1 
+    order by
+        p1_1.nombre 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2026-11-11 18:06:42.714 INFO  [http-nio-127.0.0.1-8083-exec-7] c.f.c.controller.ProveedorController - GET lista paginada: Page request [number: 0, size 100, sort: nombre: ASC]
+2026-11-11 18:06:42.714 INFO  [http-nio-127.0.0.1-8083-exec-7] c.f.c.s.impl.ProveedorServiceImpl - Listando registros: Page request [number: 0, size 100, sort: nombre: ASC]
+2026-11-11 18:06:42.717 DEBUG [http-nio-127.0.0.1-8083-exec-7] org.hibernate.SQL - 
+    select
+        p1_0.id_persona,
+        p1_1.apellido,
+        p1_1.correo,
+        p1_1.direccion,
+        p1_1.fecha_nacimiento,
+        p1_1.nombre,
+        p1_1.ruc,
+        p1_1.telefono,
+        p1_1.tipo_persona,
+        p1_0.plazo_entrega 
+    from
+        proveedores p1_0 
+    join
+        personas p1_1 
+            on p1_0.id_persona=p1_1.id_persona 
+    where
+        1=1 
+    order by
+        p1_1.nombre 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2026-11-11 18:07:27.605 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-11-11 18:12:27.616 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-11-11 18:17:27.631 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-11-11 18:22:27.646 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-11-11 18:27:27.659 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
