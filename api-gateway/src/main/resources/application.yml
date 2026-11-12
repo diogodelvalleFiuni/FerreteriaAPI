@@ -45,7 +45,7 @@ spring:
             - id: compras
               uri: ${COMPRAS_URI:lb://ms-compras}
               predicates:
-                - Path=/api/compras/**,/api/proveedores/**
+                - Path=/api/proveedores/**,/api/facturas-compras/**,/api/detalles-compras/**
             # ---- ms-seguridad ----
             - id: seguridad
               uri: ${SEGURIDAD_URI:lb://ms-seguridad}
