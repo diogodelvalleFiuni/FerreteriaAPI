@@ -14,10 +14,14 @@ spring:
   cloud:
     gateway:
       server:
-        webmvc:            # OJO: este es el prefijo correcto en Spring Cloud 2025.0 (antes era gateway.mvc)
+        webmvc:
+          # OJO: este es el prefijo correcto en Spring Cloud 2025.0 (antes era gateway.mvc)
           # Si hay un proxy/balanceador delante del gateway, indicar su IP (regex) para confiar en sus
           # cabeceras X-Forwarded-* (correccion CVE-2026-47825). Sin proxy delante, dejarlo sin definir.
           # trusted-proxies: ${TRUSTED_PROXIES}
+          default-filters:
+            - RemoveRequestHeader=Origin     # los servicios nunca ven un origen de navegador
+
           routes:
             # ---- ms-inventario ----
             # INVENTARIO_URI:
