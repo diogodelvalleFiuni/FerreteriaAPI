@@ -546,3 +546,154 @@
     fetch
         first ? rows only
 2026-11-11 18:27:20.208 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-11-11 18:31:41.056 INFO  [http-nio-127.0.0.1-8081-exec-4] c.f.i.controller.ProductoController - GET lista paginada: Page request [number: 0, size 100, sort: nombre: ASC]
+2026-11-11 18:31:41.180 DEBUG [http-nio-127.0.0.1-8081-exec-4] c.f.i.s.impl.ProductoServiceImpl - Listando registros: Page request [number: 0, size 100, sort: nombre: ASC]
+2026-11-11 18:31:41.184 DEBUG [http-nio-127.0.0.1-8081-exec-4] org.hibernate.SQL - 
+    select
+        p1_0.id_producto,
+        p1_0.id_categoria,
+        p1_0.codigo,
+        p1_0.descripcion,
+        p1_0.id_marca,
+        p1_0.nombre,
+        p1_0.precio_compra,
+        p1_0.precio_venta 
+    from
+        productos p1_0 
+    order by
+        p1_0.nombre 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2026-11-11 18:31:41.469 INFO  [http-nio-127.0.0.1-8081-exec-6] c.f.i.controller.ProductoController - GET lista paginada: Page request [number: 0, size 100, sort: nombre: ASC]
+2026-11-11 18:31:41.469 DEBUG [http-nio-127.0.0.1-8081-exec-6] c.f.i.s.impl.ProductoServiceImpl - Listando registros: Page request [number: 0, size 100, sort: nombre: ASC]
+2026-11-11 18:31:41.472 DEBUG [http-nio-127.0.0.1-8081-exec-6] org.hibernate.SQL - 
+    select
+        p1_0.id_producto,
+        p1_0.id_categoria,
+        p1_0.codigo,
+        p1_0.descripcion,
+        p1_0.id_marca,
+        p1_0.nombre,
+        p1_0.precio_compra,
+        p1_0.precio_venta 
+    from
+        productos p1_0 
+    order by
+        p1_0.nombre 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2026-11-11 18:32:20.211 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-11-11 18:37:20.213 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-11-11 18:42:20.216 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-11-11 18:47:20.234 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-11-11 18:52:20.936 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-11-11 19:03:25.875 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m46s415ms275µs200ns).
+2026-11-11 19:15:46.203 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m50s309ms154µs900ns).
+2026-11-11 19:15:48.197 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@3829f1c7 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-11-11 21:31:58.284 WARN  [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Pool is empty, failed to create/setup connection (7e179ec0-3a95-4f2a-aec3-d9ff49b82fb8)
+org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:439)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:52)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:295)
+	at org.postgresql.Driver.makeConnection(Driver.java:437)
+	at org.postgresql.Driver.connect(Driver.java:305)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:373)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:210)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:752)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:731)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.UnknownHostException: aws-0-sa-east-1.pooler.supabase.com
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:270)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:131)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:221)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:367)
+	... 14 common frames omitted
+2026-11-11 21:32:02.462 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-11-11 21:32:21.048 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h16m34s842ms35µs600ns).
+2026-11-11 23:36:31.168 INFO  [main] c.f.inventario.InventarioApplication - Starting InventarioApplication using Java 21.0.12.1 with PID 9380 (C:\Users\Marti\Desktop\FerreteriaLujan-Distri\ms-inventario\target\classes started by Marti in C:\Users\Marti\Desktop\FerreteriaLujan-Distri\ms-inventario)
+2026-11-11 23:36:31.176 INFO  [main] c.f.inventario.InventarioApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-11 23:36:31.601 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-11-11 23:36:32.564 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-11-11 23:36:32.567 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-11 23:36:32.842 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 261 ms. Found 7 JPA repository interfaces.
+2026-11-11 23:36:32.876 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-11-11 23:36:32.878 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-11-11 23:36:32.916 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.inventario.repository.CategoriaProductoRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-11-11 23:36:32.917 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.inventario.repository.DepositoRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-11-11 23:36:32.918 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.inventario.repository.DetalleTransferenciaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-11-11 23:36:32.919 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.inventario.repository.InventarioRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-11-11 23:36:32.919 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.inventario.repository.MarcaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-11-11 23:36:32.920 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.inventario.repository.ProductoRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-11-11 23:36:32.920 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ferreteria.inventario.repository.TransferenciaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-11-11 23:36:32.920 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+2026-11-11 23:36:33.156 INFO  [main] o.s.cloud.context.scope.GenericScope - BeanFactory id=aebe58e5-2980-34ce-a727-c4b8c20c1b53
+2026-11-11 23:36:33.600 INFO  [main] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-11-11 23:36:33.620 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-127.0.0.1-8081"]
+2026-11-11 23:36:33.624 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-11 23:36:33.625 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-11-11 23:36:33.729 INFO  [main] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2508 ms
+2026-11-11 23:36:33.920 INFO  [main] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-11 23:36:33.960 INFO  [main] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-11-11 23:36:34.353 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-11 23:36:34.375 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-11-11 23:36:35.220 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5b827796
+2026-11-11 23:36:35.221 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-11-11 23:36:35.694 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://aws-0-sa-east-1.pooler.supabase.com:5432/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-11 23:36:37.193 INFO  [main] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-11 23:36:37.203 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-11 23:36:37.319 INFO  [main] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-11-11 23:36:39.309 INFO  [main] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestClient.
+2026-11-11 23:36:39.354 WARN  [main] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-11-11 23:36:39.420 INFO  [main] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-11-11 23:36:39.439 INFO  [main] c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-11-11 23:36:39.442 INFO  [main] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-11-11 23:36:39.450 INFO  [main] c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-11-11 23:36:39.451 INFO  [main] c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-11-11 23:36:39.451 INFO  [main] c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-11-11 23:36:39.451 INFO  [main] c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-11-11 23:36:39.451 INFO  [main] c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-11-11 23:36:39.451 INFO  [main] c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-11-11 23:36:39.451 INFO  [main] c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-11-11 23:36:39.931 INFO  [main] c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-11-11 23:36:39.937 INFO  [main] c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-11-11 23:36:39.948 INFO  [main] c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-11-11 23:36:39.952 INFO  [main] c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1794450999951 with initial instances count: 2
+2026-11-11 23:36:39.963 INFO  [main] o.s.c.n.e.s.EurekaServiceRegistry - Registering application MS-INVENTARIO with eureka with status UP
+2026-11-11 23:36:39.965 INFO  [main] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1794450999965, current=UP, previous=STARTING]
+2026-11-11 23:36:39.967 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-127.0.0.1-8081"]
+2026-11-11 23:36:39.967 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-INVENTARIO/ms-inventario:8081: registering service...
+2026-11-11 23:36:39.993 INFO  [main] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-11-11 23:36:39.994 INFO  [main] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8081
+2026-11-11 23:36:40.012 INFO  [main] c.f.inventario.InventarioApplication - Started InventarioApplication in 9.387 seconds (process running for 9.85)
+2026-11-11 23:36:40.024 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-INVENTARIO/ms-inventario:8081 - registration status: 204
+2026-11-11 23:38:23.246 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@599405c6 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-11-11 23:43:43.243 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m7s873ms23µs).
+2026-11-11 23:43:43.243 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@5b827796 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-11-11 23:43:43.243 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@409b6a23 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-11-11 23:44:17.325 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-11-11 23:49:17.337 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-11-11 23:54:17.340 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-11-11 23:59:17.347 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
