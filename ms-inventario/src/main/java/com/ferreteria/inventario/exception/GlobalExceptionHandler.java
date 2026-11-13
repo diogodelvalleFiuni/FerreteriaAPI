@@ -35,6 +35,13 @@ public class GlobalExceptionHandler {
         return build(HttpStatus.NOT_FOUND.value(), ex.getMessage(), request);
     }
 
+    /** Regla de negocio incumplida (ej. stock insuficiente): 422, el mensaje es seguro de mostrar al cliente. */
+    @ExceptionHandler(BusinessException.class)
+    public ResponseEntity<ApiErrorDTO> handleBusiness(BusinessException ex, HttpServletRequest request) {
+        log.warn("422 {}: {}", request.getRequestURI(), ex.getMessage());
+        return build(422, ex.getMessage(), request);
+    }
+
     /** Fallo de @PreAuthorize (ocurre dentro del controller, asi que el filtro de seguridad no lo atrapa): 403, no 500. */
     @ExceptionHandler(AccessDeniedException.class)
     public ResponseEntity<ApiErrorDTO> handleAccessDenied(AccessDeniedException ex, HttpServletRequest request) {
